@@ -15,7 +15,7 @@ after_sucess:
   - docker build -t yasir6402/multi-server ./server
   - docker build -t yasir6402/multi-worker ./worker
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-  - docker push yasir6402/multi-client
-  - docker push yasir6402/multi-nginx
-  - docker push yasir6402/multi-server
-  - docker push yasir6402/multi-worker
+  - docker push yasir6403/multi-client
+  - docker push yasir6403/multi-nginx
+  - docker push yasir6403/multi-server
+  - docker push yasir6403/multi-worker
