@@ -10,10 +10,10 @@ script:
   - docker run -e CI=true yasir6402/multi_doc_react npm test
 
 after_sucess:
-  - docker build -t yasir6402/multi-client ./client
-  - docker build -t yasir6402/multi-nginx ./nginx
-  - docker build -t yasir6402/multi-server ./server
-  - docker build -t yasir6402/multi-worker ./worker
+  - docker build -t yasir6403/multi-client ./client
+  - docker build -t yasir6403/multi-nginx ./nginx
+  - docker build -t yasir6403/multi-server ./server
+  - docker build -t yasir6403/multi-worker ./worker
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   - docker push yasir6403/multi-client
   - docker push yasir6403/multi-nginx

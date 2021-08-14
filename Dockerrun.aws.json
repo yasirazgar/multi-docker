@@ -1,0 +1,29 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "client",
+      "image": "yasir6403/multi-client",
+      "hostname": "client",
+      "essential": false
+    },
+    {
+      "name": "server",
+      "image": "yasir6403/multi-server",
+      "hostname": "api",
+      "essential": false
+    },
+    {
+      "name": "worker",
+      "image": "yasir6403/multi-worker",
+      "hostname": "worker",
+      "essential": false
+    },
+    {
+      "name": "nginix",
+      "image": "yasir6403/multi-nginx",
+      "hostname": "nginx",
+      "essential": true
+    }
+  ]
+}
