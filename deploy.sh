@@ -8,6 +8,6 @@ docker push yasir6403/multi-client:latest:$SHA
 docker push yasir6403/multi-server:latest:$SHA
 docker push yasir6403/multi-worker:latest:$SHA
 kubctl apply -f k8s
-kubectl set image deployments/server-deployment server=yasir6403/multi-server:$SHAR
 kubectl set image deployments/client-deployment client=yasir6403/multi-client:$SHAR
+kubectl set image deployments/server-deployment server=yasir6403/multi-server:$SHAR
 kubectl set image deployments/worker-deployment worker=yasir6403/multi-worker:$SHAR
